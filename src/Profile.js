@@ -10,8 +10,7 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 315,
-    maxHeight: 500
+    maxWidth: 345
   }
 });
 
@@ -19,16 +18,16 @@ export default function ImgMediaCard() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root} align="center">
+    <Card className={classes.root}>
       <CardActionArea>
-        <iframe
-          src="https://open.spotify.com/embed/playlist/37i9dQZF1DX3qCx5yEZkcJ"
-          width="300"
-          height="380"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe>
+        <CardMedia
+          component="img"
+          alt="Contemplative Reptile"
+          height="300"
+          image="https://uploads.codesandbox.io/uploads/user/0cd5a701-a3db-4784-8769-7c382c8ab0ae/eXh1-profilePic.jpeg"
+          title="Contemplative Reptile"
+        />
+        <CardContent></CardContent>
       </CardActionArea>
     </Card>
   );

@@ -20,6 +20,7 @@ import Card from "@material-ui/core/Card";
 import Reactcard from "./Reactcard";
 import Materialcard from "./Materialcard";
 import Playlist from "./Playlist";
+import Profile from "./Profile";
 //import materialcard from "./materialcard";
 
 const useStyles = makeStyles((theme) => ({
@@ -47,7 +48,7 @@ export default function App() {
           <MenuAppBar />
         </Grid>
         <Grid item xs={12} sm={6}>
-          Images
+          <Profile />
         </Grid>
         <Grid item xs={6} sm={6} center>
           <Playlist />
